@@ -1,17 +1,23 @@
-$primary-color:#626262;
+@import './resets';
+@import './variables';
 
-
-/*maps*/
-$font-weights: (
-    "regular":400,
-    "medium":500,
-    "bold":700
-);
-
-*{
-    margin:0;
-    padding:0;
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
 }
 body{
     background-color: $primary-color;
+    font-weight: weight(bold);
+}
+.main{
+    width:80%;
+    margin:0 auto;
+    //Esto es para hacer una cadena
+    #{&}-para{
+        color:$secondary-color;
+        transition:all 0.5s;
+        &:hover{
+            color:$third-color;
+        }
+    }
+    
 }

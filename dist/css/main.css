@@ -1,10 +1,28 @@
-/*maps*/
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/*maps*/
 body {
   background-color: #626262;
+  font-weight: 700;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .main-para {
+  color: gainsboro;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main .main-para:hover {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
