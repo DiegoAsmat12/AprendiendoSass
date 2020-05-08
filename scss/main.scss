@@ -1,4 +1,9 @@
+$primary-color:#626262;
+
 *{
     margin:0;
     padding:0;
+}
+body{
+    background: $primaryColor;
 }
