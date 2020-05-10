@@ -25,17 +25,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
 }
 
-.main .main-para {
+.main .main-paragraph-1, .main .main-paragraph-2 {
   color: gainsboro;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.main .main-para:hover {
+.main .main-paragraph-1:hover, .main .main-paragraph-2:hover {
   color: white;
+}
+
+.main .main-paragraph-2:hover {
+  color: pink;
+}
+
+@media (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
